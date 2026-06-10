@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation - Unified Single Layer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        body {
+            background-color: #1a0000; 
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Marcellus', serif;
+        }
+
+        /* Clean single layer card */
+        .invitation-card {
+            width: 650px; 
+            min-height: 720px; 
+            background: radial-gradient(circle, #5c0606 0%, #300202 100%); 
+            color: #ffffff; 
+            border: 2px solid #d4af37; 
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Top row container for all graphics elements */
+        .header-graphics-row {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        /* FIX: Converts the dark graphic to a clean, transparent golden outline against the maroon card */
+        .ganesha-logo {
+            width: 150px;
+            height: auto;
+            max-height: 480px; 
+            object-fit: contain;
+            filter: invert(1) hue-rotate(180deg) brightness(1.2) contrast(1.2);
+            mix-blend-mode: screen;
+        }
+
+        /* FIX: Chroma-mask setup that strips the faux checkered background out completely */
+        .top-deities {
+            width: 200px;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            
+        }
+
+        /* QR Code wrapper layout */
+        .qr-code-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 11px;
+            color: #ffffff;
+            width: 130px;
+        }
+
+        .qr-placeholder {
+            width: 95px;
+            height: 95px;
+            margin-bottom: 5px;
+            border: 2px solid #ffffff; 
+        }
+
+        .invocation {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .hosts {
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .invitation-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #e0e0e0; 
+        }
+
+        .occasion {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+
+        .details-section {
+            margin: 0 auto;
+            max-width: 520px;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .time-table {
+            display: flex;
+            justify-content: center; 
+            gap: 50px;               
+            margin: 30px 0;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .landmark-box {
+            border: 1px solid #d4af37; 
+            display: inline-block;
+            padding: 8px 18px;
+            font-size: 13px;
+            margin-bottom: 35px;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.2); 
+        }
+
+        .divider {
+            width: 90%;
+            height: 1px;
+            background-color: #d4af37; 
+            margin: 25px auto;
+        }
+
+        .footer-section {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        
+        <div class="header-graphics-row">
+            <img class="ganesha-logo" src="C:\Users\Rashmi\Downloads\shiva-ganesha-ganesh-chaturthi-clip-art-png-favpng-mHhUqf9Q667PTjE8irjQGEB9V.jpg" alt="Ganesha Logo">
+            
+            <img class="top-deities" src="C:\Users\Rashmi\Downloads\Picture1.png" alt="Sri Lakshmi Venkateshwara">
+            
+            <div class="qr-code-container">
+                <img class="qr-placeholder" src="C:\Users\Rashmi\Downloads\My_QR_Code_1-4096.jpeg" alt="QR Code">
+                <div>Scan Here For Location</div>
+            </div>
+        </div>
+
+        <div class="invocation">|| Sri Lakshmi Venkateshwara Prasanna ||</div>
+        
+        <div class="hosts">Smt Yashoda & Sri B Harihara</div>
+        
+        <div class="invitation-text">Cordially invite you with your family and friends on the auspicious occasion of</div>
+        <div class="occasion">GRUHAPRAVESHAM Of our new Apartment</div>
+
+        <div class="details-section">
+            <strong>On Sunday, 21st June 2026</strong><br>
+            Krishna Residency, Apartment AF8, 1st Floor, 2nd Phase,<br>
+            Judicial Layout, Thalaghattapura, Bengaluru - 560062
+        </div>
+
+        <div class="time-table">
+            <div>Muhurtham: 07:00 AM to 08:00 AM</div>
+            <div>Lunch: 12:30 PM</div>
+        </div>
+
+        <div class="landmark-box">
+            ALIGHT AT Thalaghattapura Metro Station
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="footer-section">
+            <em>With Best Compliments From:</em><br>
+            <strong>Narasimha Rashmi Shreemanyu.</strong>
+        </div>
+
+    </div>
+
+</body>
+</html>
